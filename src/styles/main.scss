@@ -1,0 +1,11 @@
+@use './base/reset';
+@use './utils/variables';
+@use './utils/functions' as *;
+@use './utils/mixins' as *;
+@use './base/base';
+@use './base/slider';
+
+@use './blocks/header';
+@use './blocks/hero';
+@use './blocks/intro';
+@use './blocks/footer';
