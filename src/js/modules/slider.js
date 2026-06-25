@@ -1,66 +1,51 @@
 import Swiper from 'swiper'
-// import { Navigation, Scrollbar } from 'swiper/modules'
+import { Navigation, Scrollbar, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 
 export function initSliders() {
-	if (document.querySelector('.swiper')) {
+	if (document.querySelector('.services__list')) {
 		new Swiper('.swiper', {
-			// modules: [Navigation, Scrollbar],
+			modules: [Navigation, Scrollbar, Autoplay],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
+			slidesPerView: 1.2,
 			spaceBetween: 16,
 			speed: 800,
-			// centeredSlides: true,
-			// loop: true,
-
-			/*
-			// Ефекти
-			effect: 'fade',
+			loop: true,
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
+				pauseOnMouseEnter: true,
 			},
-			*/
 
-			// Пагінація
-			/*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+			scrollbar: {
+				el: '.services__scrollbar',
+				draggable: true,
 			},
-			*/
 
-			// Скроллбар
-			// scrollbar: {
-			// 	el: '.services__scrollbar',
-			// 	draggable: true,
-			// },
+			navigation: {
+				prevEl: '.services__nav-prev',
+				nextEl: '.services__nav-next',
+			},
 
-			// Кнопки "вліво/вправо"
-			// navigation: {
-			// 	prevEl: '.swiper-btn-prev',
-			// 	nextEl: '.swiper-btn-next',
-			// },
-
-			// // Брейкпоінти
-			// breakpoints: {
-			// 	768: {
-			// 		slidesPerView: 2.5,
-			// 		spaceBetween: 9,
-			// 	},
-			// 	992: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 9,
-			// 	},
-			// 	1268: {
-			// 		slidesPerView: 4,
-			// 		spaceBetween: 9,
-			// 	},
-			// },
-
-			// Події
-			on: {},
+			breakpoints: {
+				768: {
+					slidesPerView: 2.5,
+					spaceBetween: 24,
+				},
+				992: {
+					slidesPerView: 3.5,
+					spaceBetween: 24,
+				},
+				1080: {
+					slidesPerView: 4.2,
+					spaceBetween: 24,
+				},
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 24,
+				},
+			},
 		})
 	}
 }

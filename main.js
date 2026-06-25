@@ -1,6 +1,6 @@
 import '@/styles/main.scss'
 
-// import { initSliders } from './src/js/modules/slider'
+import { initSliders } from './src/js/modules/slider'
 // import { initPhoneMask } from './src/js/modules/phoneMask'
 // import { initAccordion } from '@/js/modules/accordion'
 import { initMenu } from '@/js/modules/menu'
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		activeClass: 'is-open',
 	})
 	// initScrollAnimations()
-	// initSliders()
+	initSliders()
 	// initModals()
 	// initPhoneMask('.number-mask')
 	// initAccordion({

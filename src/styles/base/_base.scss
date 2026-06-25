@@ -120,3 +120,47 @@ body.lock {
 		width: 100%;
 	}
 }
+
+/* Заголовок */
+[class$='__head'] {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	max-width: 626px;
+	width: 100%;
+	@include respond(tablet) {
+		gap: 10px;
+	}
+	p {
+		color: $color-black;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	h2 {
+		color: $color-brown;
+		font-family: $font-accent;
+		font-size: 40px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 50px;
+		@include respond(tablet) {
+			font-size: 36px;
+			line-height: 38px;
+		}
+		@include respond(mobile) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+}
+
+section {
+	margin-bottom: 100px;
+	@include respond(tablet) {
+		margin-bottom: 80px;
+	}
+	@include respond(mobile) {
+		margin-bottom: 60px;
+	}
+}

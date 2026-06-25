@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .swiper {
 	overflow: hidden;
 }
@@ -24,7 +26,6 @@
 .swiper-initialized {
 	.swiper-slide {
 		flex-shrink: 0;
-		// transition-property: transform;
 	}
 }
 .swiper-android {
@@ -38,4 +39,55 @@
 }
 .swiper-button-disabled {
 	opacity: 0.5;
+}
+
+.swiper-nav {
+	@include flex-center;
+	gap: 10px;
+	@include respond(tablet) {
+		display: none;
+	}
+}
+.swiper-nav-prev,
+.swiper-nav-next {
+	@include flex-center;
+	width: 52px;
+	height: 52px;
+	padding: 23px 20px;
+	color: $color-brown;
+	font-size: 14px;
+	border-radius: 50px;
+	background: $color-white;
+	transition: $transition-default;
+	@include hover {
+		color: $color-white;
+		background: $color-olives;
+	}
+}
+.swiper-nav-prev {
+	transform: rotate(180deg);
+}
+
+.swiper-scrollbar {
+	display: none;
+	@include respond(tablet) {
+		display: block;
+		width: 454px;
+		height: 3px;
+		border-radius: 5px;
+		background: rgba(87, 70, 50, 0.2);
+		margin: auto;
+		margin-top: 40px;
+	}
+	@include respond(mobile) {
+		width: 240px;
+		margin-top: 20px;
+	}
+}
+
+.swiper-scrollbar-drag {
+	width: auto;
+	height: 3px;
+	border-radius: 5px;
+	background: rgba(87, 70, 50, 0.4);
 }
