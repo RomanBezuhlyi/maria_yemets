@@ -1,0 +1,74 @@
+@use '../utils' as *;
+
+.hero-banner {
+	position: relative;
+	overflow: hidden;
+
+	padding: 90px 0 100px 0;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@include respond(tablet) {
+		padding-top: 150px;
+	}
+	@include respond(mobile) {
+		padding: 126px 0 224px 0;
+	}
+
+	&--price {
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+			url('/src/assets/images/price-hero.png');
+	}
+
+	&__title {
+		margin-top: 50px;
+
+		color: $color-white;
+		font-family: $font-accent;
+		font-size: 64px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 82px;
+		@include respond(tablet) {
+			font-size: 48px;
+			line-height: 52px;
+		}
+		@include respond(mobile) {
+			font-size: 36px;
+			line-height: 38px;
+		}
+	}
+}
+
+.breadcrumbs {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		color: $color-white;
+
+		&:not(:last-child)::after {
+			content: '>';
+			margin-left: 8px;
+			color: $color-white;
+			opacity: 0.7;
+		}
+	}
+
+	&__link {
+		color: $color-white;
+		opacity: 0.4;
+
+		@include hover {
+			color: $color-white;
+		}
+	}
+}
