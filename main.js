@@ -1,11 +1,12 @@
 import '@/styles/main.scss'
 
+import { Fancybox } from '@fancyapps/ui/dist/fancybox/'
+import '@fancyapps/ui/dist/fancybox/fancybox.css'
 import { initSliders } from './src/js/modules/slider'
 // import { initPhoneMask } from './src/js/modules/phoneMask'
 // import { initAccordion } from '@/js/modules/accordion'
 import { initMenu } from '@/js/modules/menu'
 import { initDropdown } from '@/js/modules/dropdown'
-// import { initModals } from '@/js/modules/modals'
 // import { initScrollAnimations } from '@/js/modules/animation'
 import { initHeaderScroll } from './src/js/modules/headerScroll'
 import { initHeroSlider } from './src/js/modules/heroSlider'
@@ -25,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		triggerSelector: '.open-dropdown',
 		activeClass: 'is-open',
 	})
+	Fancybox.bind('[data-fancybox]')
 	// initScrollAnimations()
 	initSliders()
-	// initModals()
 	// initPhoneMask('.number-mask')
 	// initAccordion({
 	// 	rootSelector: '.faq',

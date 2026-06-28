@@ -13,6 +13,7 @@
     "vite": "^8.0.10"
   },
   "dependencies": {
+    "@fancyapps/ui": "^6.1.14",
     "imask": "^7.6.1",
     "normalize.css": "^8.0.1",
     "swiper": "^12.1.4"
