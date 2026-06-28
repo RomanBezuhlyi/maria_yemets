@@ -1,0 +1,165 @@
+@use '../utils' as *;
+
+.price {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 24px;
+		@include respond(tablet) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		@include respond(mobile) {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+	}
+	&-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 10px;
+
+		padding: 20px;
+
+		background-color: $color-creamy;
+		border-radius: 20px;
+		@include respond(tablet) {
+			padding: 20px 10px;
+		}
+		&__img {
+			width: 100%;
+			aspect-ratio: 368 / 279;
+			object-fit: cover;
+
+			border-radius: 10px;
+			@include respond(tablet) {
+				aspect-ratio: 348 / 279;
+			}
+			@include respond(mobile) {
+				aspect-ratio: 323 / 279;
+			}
+		}
+
+		&__title {
+			font-family: $font-main;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 1.08;
+			@include respond(mobile) {
+				font-size: 20px;
+				line-height: 1.1;
+			}
+		}
+
+		&__price {
+			display: flex;
+			gap: 5px;
+
+			font-family: $font-accent;
+			font-size: 40px;
+			font-weight: normal;
+			font-style: italic;
+			line-height: 1.25;
+			color: $color-brown;
+			&-eur {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+			@include respond(mobile) {
+				font-size: 32px;
+				line-height: 1.13;
+			}
+		}
+
+		&__description {
+			font-family: $font-main;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			line-height: 1.38;
+			color: $color-black;
+		}
+
+		&__features {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			gap: 5px;
+		}
+
+		&__feature {
+			display: grid;
+			grid-template-columns: 12px 1fr;
+			column-gap: 10px;
+			align-items: start;
+
+			font-family: $font-main;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			line-height: 1.38;
+			color: $color-black;
+
+			&::before {
+				content: '✓';
+				grid-column: 1;
+				font-style: 12px;
+				line-height: 1.25;
+			}
+		}
+	}
+	&__questions {
+		padding-top: 100px;
+		max-width: 672px;
+		@include respond(tablet) {
+			max-width: 100%;
+		}
+		&-title {
+			font-family: $font-accent;
+			font-size: 32px;
+			font-weight: normal;
+			font-style: italic;
+			line-height: 1.25;
+			color: $color-brown;
+			@include respond(tablet) {
+				font-size: 36px;
+			}
+			@include respond(mobile) {
+				font-size: 24px;
+			}
+		}
+		&-text {
+			padding-top: 10px;
+
+			font-family: $font-main;
+			font-size: 20px;
+			font-weight: 200;
+			line-height: 1.2;
+			color: $color-black;
+			@include respond(tablet) {
+				padding-top: 20px;
+
+				font-size: 18px;
+			}
+			@include respond(tablet) {
+				padding-top: 10px;
+
+				font-size: 16px;
+			}
+		}
+		&-button {
+			margin-top: 50px;
+			color: $color-brown;
+			border: 1px solid $color-brown;
+			@include hover {
+				color: $color-creamy;
+				background: $color-brown;
+			}
+			@include respond(tablet) {
+				margin-top: 40px;
+			}
+			@include respond(tablet) {
+				margin-top: 20px;
+			}
+		}
+	}
+}

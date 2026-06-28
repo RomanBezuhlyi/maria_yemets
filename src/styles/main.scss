@@ -7,7 +7,9 @@
 
 @use './blocks/header';
 @use './blocks/hero';
-@use './blocks/hero-banner';
 @use './blocks/intro';
 @use './blocks/services';
 @use './blocks/footer';
+
+@use './blocks/hero-banner';
+@use './blocks/price';
