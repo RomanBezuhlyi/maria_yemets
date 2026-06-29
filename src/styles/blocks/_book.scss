@@ -1,0 +1,242 @@
+@use '../utils' as *;
+
+.book {
+	position: relative;
+	background: url(../../assets/images/book.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	padding: 50px 0;
+	@include respond(tablet) {
+		padding: 40px 0;
+	}
+	@include respond(mobile) {
+		padding: 20px 0;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			180deg,
+			rgba(112, 97, 73, 0.8) 0%,
+			rgba(45, 41, 29, 0.7) 50%,
+			#2c281d 100%
+		);
+	}
+	&__content {
+		position: relative;
+		max-width: 630px;
+		width: 100%;
+		margin: auto;
+		z-index: 2;
+		@include respond(tablet) {
+			max-width: 600px;
+		}
+		@include respond(mobile) {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		color: $color-creamy;
+		font-family: $font-accent;
+		font-size: 40px;
+		font-style: italic;
+		line-height: 50px;
+		margin-bottom: 10px;
+		@include respond(tablet) {
+			font-size: 36px;
+			line-height: 38px;
+		}
+		@include respond(mobile) {
+			font-size: 32px;
+			line-height: 36px;
+		}
+	}
+
+	&__text {
+		color: $color-creamy;
+		font-family: $font-accent;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 24px;
+		margin-bottom: 50px;
+		@include respond(tablet) {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 40px;
+		}
+		@include respond(mobile) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__form > form {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__form-row {
+		display: flex;
+		gap: 20px;
+		@include respond(mobile) {
+			flex-direction: column;
+			gap: 30px;
+		}
+	}
+
+	&__tabs {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__tab {
+		position: relative;
+		@include flex-center;
+		height: 42px;
+		padding: 10px 10px 10px 30px;
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 22px;
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		transition: $transition-default;
+		@include respond(mobile) {
+			font-size: 16px;
+			line-height: 20px;
+			padding: 10px 5px 10px 25px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 15px;
+			height: 15px;
+			border-radius: 30px;
+			background: rgba(255, 255, 255, 0.4);
+			transition: $transition-default;
+		}
+		@include hover {
+			color: $color-white;
+			border-color: $color-white;
+			&::before {
+				background: $color-white;
+			}
+		}
+	}
+
+	&__tab.is-active {
+		color: $color-white;
+		border-color: $color-white;
+		&::before {
+			background: $color-white;
+		}
+	}
+
+	&__privacy {
+		margin-top: 10px;
+		color: rgba(255, 255, 255, 0.4);
+		text-align: center;
+		font-size: 16px;
+		line-height: 22px;
+		a {
+			color: $color-white;
+			text-decoration-line: underline;
+		}
+	}
+}
+
+.input {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	label {
+		color: $color-white;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	input {
+		outline: none;
+		color: $color-white;
+		font-size: 18px;
+		line-height: 22px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		transition: $transition-default;
+		&:focus {
+			border-color: $color-white;
+		}
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}
+.textarea {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	label {
+		color: $color-white;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	textarea {
+		outline: none;
+		color: $color-white;
+		font-size: 18px;
+		line-height: 22px;
+		height: 72px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		resize: none;
+		transition: $transition-default;
+		&:focus {
+			border-color: $color-white;
+		}
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	label {
+		color: $color-white;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+
+.btn-submit {
+	@include flex-center;
+	height: 52px;
+	padding: 4px 20px;
+	color: $color-black;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	border-radius: 10px;
+	background: $color-background;
+	transition: $transition-default;
+	cursor: pointer;
+	@include hover {
+		color: $color-white;
+		background: $color-olives;
+	}
+}

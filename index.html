@@ -52,9 +52,9 @@
 						</div>
 					</nav>
 					<div class="header__socials">
-						<a class="header__social icon-mail" href="#"></a>
-						<a class="header__social icon-instagram" href="#"> </a>
-						<a class="header__social icon-whatsapp" href="#"></a>
+						<a class="header__social social-icon icon-mail" href="#"></a>
+						<a class="header__social social-icon icon-instagram" href="#"> </a>
+						<a class="header__social social-icon icon-whatsapp" href="#"></a>
 					</div>
 					<button class="header__burger">
 						<i class="icon-burger"></i>
@@ -100,9 +100,10 @@
 							</div>
 						</div>
 						<div class="header__menu-socials">
-							<a class="header__social icon-mail" href="#"></a>
-							<a class="header__social icon-instagram" href="#"> </a>
-							<a class="header__social icon-whatsapp" href="#"></a>
+							<a class="header__social social-icon icon-mail" href="#"></a>
+							<a class="header__social social-icon icon-instagram" href="#">
+							</a>
+							<a class="header__social social-icon icon-whatsapp" href="#"></a>
 						</div>
 						<div class="header__menu-langs">
 							<button class="header__menu-lang active">English</button>
@@ -153,10 +154,12 @@
 					<div class="intro__container">
 						<img
 							class="intro__img-left"
+							data-animate="fade-right"
 							src="/src/assets/images/intro-left.png"
-							alt=""
+							alt="image"
+							loading="lazy"
 						/>
-						<div class="intro__content">
+						<div class="intro__content" data-animate="fade-up">
 							<h2 class="intro__title">
 								Barcelona Photography for Every Chapter of Your Story
 							</h2>
@@ -171,7 +174,9 @@
 						<img
 							class="intro__img-right"
 							src="/src/assets/images/intro-right.png"
-							alt=""
+							data-animate="fade-left"
+							alt="image"
+							loading="lazy"
 						/>
 					</div>
 				</section>
@@ -179,10 +184,10 @@
 					<div class="services__container">
 						<div class="services__top">
 							<div class="services__head">
-								<p>My Services</p>
-								<h2>Moments Turned Into Art</h2>
+								<p data-animate="fade-right">My Services</p>
+								<h2 data-animate="fade-right">Moments Turned Into Art</h2>
 							</div>
-							<div class="services__nav swiper-nav">
+							<div class="services__nav swiper-nav" data-animate="fade-left">
 								<button class="services__nav-prev swiper-nav-prev">
 									<i class="icon-arrow"></i>
 								</button>
@@ -191,7 +196,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="services__list swiper">
+						<div class="services__list swiper" data-animate="fade-up">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide services__card">
 									<a href="#" class="services__link">
@@ -257,17 +262,19 @@
 					<div class="about__container">
 						<div class="about__left">
 							<div class="about__head">
-								<p>About me</p>
-								<h2>Behind the Lens</h2>
+								<p data-animate="fade-right">About me</p>
+								<h2 data-animate="fade-right">Behind the Lens</h2>
 							</div>
 							<div class="about__content">
 								<div class="about__content-top">
 									<img
 										class="about__content-img"
 										src="./src/assets/images/about-1.png"
+										data-animate="fade-right"
 										alt="about"
+										loading="lazy"
 									/>
-									<p class="about__content-text">
+									<p class="about__content-text" data-animate="fade-right">
 										Photography, for me, is about people and the emotions they
 										share. A glance. A smile. A touch. A laugh. The moments that
 										often pass unnoticed, yet become the memories we treasure
@@ -281,23 +288,23 @@
 									</p>
 								</div>
 								<div class="about__content-bottom">
-									<p class="about__content-label">
+									<p class="about__content-label" data-animate="fade-right">
 										You can contact me through any of the following methods.
 									</p>
 									<ul class="about__content-socials">
-										<li class="about__content-social">
+										<li class="about__content-social" data-animate="fade-right">
 											<a
 												class="about__content-social--link icon-mail"
 												href="#"
 											></a>
 										</li>
-										<li class="about__content-social">
+										<li class="about__content-social" data-animate="fade-right">
 											<a
 												class="about__content-social--link icon-instagram"
 												href="#"
 											></a>
 										</li>
-										<li class="about__content-social">
+										<li class="about__content-social" data-animate="fade-right">
 											<a
 												class="about__content-social--link icon-whatsapp"
 												href="#"
@@ -311,24 +318,26 @@
 							<img
 								class="about__right-img"
 								src="./src/assets/images/about-2.png"
+								data-animate="fade-left"
 								alt="about"
+								loading="lazy"
 							/>
 						</div>
 						<div class="about__bottom">
-							<p class="about__content-label">
+							<p class="about__content-label" data-animate="fade-right">
 								You can contact me through any of the following methods.
 							</p>
 							<ul class="about__content-socials">
-								<li class="about__content-social">
+								<li class="about__content-social" data-animate="fade-right">
 									<a class="about__content-social--link icon-mail" href="#"></a>
 								</li>
-								<li class="about__content-social">
+								<li class="about__content-social" data-animate="fade-right">
 									<a
 										class="about__content-social--link icon-instagram"
 										href="#"
 									></a>
 								</li>
-								<li class="about__content-social">
+								<li class="about__content-social" data-animate="fade-right">
 									<a
 										class="about__content-social--link icon-whatsapp"
 										href="#"
@@ -341,8 +350,8 @@
 				<section class="certificates">
 					<div class="certificates__container">
 						<div class="certificates__head">
-							<p>Certificates</p>
-							<h2>
+							<p data-animate="fade-right">Certificates</p>
+							<h2 data-animate="fade-right">
 								Give the gift of memories with a photography session voucher
 							</h2>
 						</div>
@@ -350,43 +359,54 @@
 							<div class="certificates__imgs">
 								<img
 									src="./src/assets/images/c-1.png"
-									alt=""
+									alt="image"
+									data-animate="fade-right"
 									class="certificates__img"
+									loading="lazy"
 								/>
 								<img
 									src="./src/assets/images/c-2.png"
-									alt=""
+									alt="image"
+									data-animate="fade-right"
 									class="certificates__img"
+									loading="lazy"
 								/>
 							</div>
 							<div class="certificates__info">
-								<p class="certificates__info-title">
+								<p class="certificates__info-title" data-animate="fade-left">
 									What’s included in the Gift Certificate for a Photoshoot in
 									Barcelona:
 								</p>
 								<ol class="certificates__info-list">
-									<li class="certificates__info-item">
+									<li class="certificates__info-item" data-animate="fade-left">
 										A certificate in a cozy envelope
 									</li>
-									<li class="certificates__info-item">A 1-hour photo shoot</li>
-									<li class="certificates__info-item">
+									<li class="certificates__info-item" data-animate="fade-left">
+										A 1-hour photo shoot
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
 										70 edited photographs in artistic colours
 									</li>
-									<li class="certificates__info-item">1 Video Reels</li>
-									<li class="certificates__info-item">
+									<li class="certificates__info-item" data-animate="fade-left">
+										1 Video Reels
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
 										A private online gallery
 									</li>
-									<li class="certificates__info-item">
+									<li class="certificates__info-item" data-animate="fade-left">
 										Delivery of a certificate by Correos within the Barcelona
 										area
 									</li>
 								</ol>
-								<div class="certificates__info-price">
+								<div class="certificates__info-price" data-animate="fade-left">
 									<p class="certificates__info-price--label">Price:</p>
 									<p class="certificates__info-price--value">399</p>
 									<p class="certificates__info-price--currency">EUR</p>
 								</div>
-								<a class="certificates__info-btn" href="#"
+								<a
+									class="certificates__info-btn"
+									href="#"
+									data-animate="fade-left"
 									>Buy a Gift Certificate</a
 								>
 							</div>
@@ -397,14 +417,19 @@
 					<div class="portfolio__container">
 						<div class="portfolio__top">
 							<div class="portfolio__head">
-								<p>My portfolio</p>
-								<h2>A Collection of Meaningful Moments</h2>
+								<p data-animate="fade-right">My portfolio</p>
+								<h2 data-animate="fade-right">
+									A Collection of Meaningful Moments
+								</h2>
 							</div>
-							<a class="portfolio__link-all desktop" href="#"
+							<a
+								class="portfolio__link-all desktop"
+								href="#"
+								data-animate="fade-left"
 								>View Portfolio <i class="icon-arrow"></i
 							></a>
 						</div>
-						<div class="portfolio__gallery">
+						<div class="portfolio__gallery" data-animate="fade-up">
 							<div class="portfolio__gallery-col">
 								<a
 									class="portfolio__gallery-link medium"
@@ -488,16 +513,19 @@
 				<section class="steps">
 					<div class="steps__container">
 						<div class="steps__head">
-							<p>How It Works</p>
-							<h2>From the first message to your final gallery</h2>
+							<p data-animate="fade-right">How It Works</p>
+							<h2 data-animate="fade-right">
+								From the first message to your final gallery
+							</h2>
 						</div>
 						<img
 							class="steps__illustration"
 							src="./src/assets/images/steps.svg"
 							alt="steps"
+							data-animate="fade-left"
 						/>
 						<ul class="steps__list">
-							<li class="steps__item">
+							<li class="steps__item" data-animate="fade-right">
 								<div class="steps__item-img">
 									<img src="./src/assets/images/step-1.svg" alt="image" />
 								</div>
@@ -507,7 +535,7 @@
 									in Barcelona, and the overall mood of your session.
 								</p>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-animate="fade-right">
 								<div class="steps__item-img">
 									<img src="./src/assets/images/step-2.svg" alt="image" />
 								</div>
@@ -517,7 +545,7 @@
 									and capture natural, authentic moments.
 								</p>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-animate="fade-right">
 								<div class="steps__item-img">
 									<img src="./src/assets/images/step-3.svg" alt="image" />
 								</div>
@@ -527,7 +555,7 @@
 									preserving my signature cinematic style.
 								</p>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-animate="fade-right">
 								<div class="steps__item-img">
 									<img src="./src/assets/images/step-4.svg" alt="image" />
 								</div>
@@ -540,9 +568,425 @@
 						</ul>
 					</div>
 				</section>
+				<section class="book">
+					<div class="book__container">
+						<div class="book__content">
+							<h2 class="book__title">Book a Session or Ask a Question</h2>
+							<p class="book__text">
+								I will contact you within 24 hours to start planning your
+								experience in Barcelona.
+							</p>
+							<div class="book__form">
+								<form>
+									<div class="book__form-row">
+										<div class="input">
+											<label>Your name*</label>
+											<input type="text" placeholder="Name" required />
+										</div>
+										<div class="input">
+											<label>Your Phone*</label>
+											<input
+												class="number-mask"
+												type="text"
+												placeholder="Phone"
+												required
+											/>
+										</div>
+									</div>
+									<div class="input">
+										<label>Your email*</label>
+										<input type="email" placeholder="Email" required />
+									</div>
+									<div class="tabs">
+										<label>What type of session are you looking for?</label>
+										<div class="book__tabs">
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Portrait"
+											>
+												Portrait
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Family"
+											>
+												Family
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Baptism"
+											>
+												Baptism
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Newborn"
+											>
+												Newborn
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Engagement"
+											>
+												Engagement
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Wedding"
+											>
+												Wedding
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Maternity"
+											>
+												Maternity
+											</button>
+											<button
+												class="book__tab"
+												type="button"
+												data-value="Branding"
+											>
+												Branding
+											</button>
+										</div>
+									</div>
+
+									<input type="hidden" name="session_type" id="session_type" />
+									<div class="textarea">
+										<label>Your message (optional)</label>
+										<textarea placeholder="Message"></textarea>
+									</div>
+									<input class="btn-submit" type="submit" value="Submit" />
+								</form>
+								<p class="book__privacy">
+									By submitting this form, you agree to our
+									<a href="#">Privacy Policy</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="reviews">
+					<div class="reviews__container">
+						<div class="reviews__head">
+							<p data-animate="fade-right">Reviews</p>
+							<h2 data-animate="fade-right">Kind Words From My Clients</h2>
+						</div>
+					</div>
+				</section>
+				<section class="faq">
+					<div class="faq__container">
+						<div class="faq__head">
+							<p data-animate="fade-right">FAQ</p>
+							<h2 data-animate="fade-right">Everything You Need to Know</h2>
+						</div>
+						<div class="faq__content">
+							<ul class="faq__list">
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											How much should I pay a photographer per hour in Spain?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											What is the golden hour in Barcelona for a photoshoot?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											Why should you hire a professional photographer Barcelona
+											for your proposal?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											What happens if it rains on our shoot day?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											Are there any restrictions on shooting in the Gothic
+											Quarter?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											How far in advance should we book you for an elopement or
+											destination session?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											How far in advance should we book you for an elopement or
+											destination session?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+								<li class="faq__item" data-animate="fade-right">
+									<div class="faq__item-top">
+										<p class="faq__item-question">
+											What is the golden hour in Barcelona for a photoshoot?
+										</p>
+										<button class="faq__item-btn">
+											<i class="icon-chev"></i>
+										</button>
+									</div>
+									<div class="faq__item-body">
+										<p class="faq__item-answer">
+											Prices depend on experience, style and the type of session
+											you choose. A professional photographer usually includes
+											preparation, shooting and editing in the final cost. This
+											means you are paying for a complete experience, not just
+											time. It also ensures consistent quality in cinematic
+											photographs.
+										</p>
+									</div>
+								</li>
+							</ul>
+							<img
+								class="faq__img"
+								src="./src/assets/images/faq.png"
+								alt="faq"
+								loading="lazy"
+								data-animate="fade-left"
+							/>
+						</div>
+					</div>
+				</section>
+				<section class="instagram">
+					<div class="instagram__container">
+						<div class="instagram__head">
+							<p data-animate="fade-right">Instagram</p>
+							<h2 data-animate="fade-right">Follow Me on Instagram</h2>
+						</div>
+						<a class="instagram__link" href="#" data-animate="fade-left">
+							<i class="social-icon icon-instagram"></i>mary.yemez
+						</a>
+					</div>
+					<div class="instagram__gallery">
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-1.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-1.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-2.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-2.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-3.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-3.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-4.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-4.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-5.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-5.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							class="instagram__gallery-item"
+							href="./src/assets/images/in-6.png"
+							data-fancybox="gallery"
+						>
+							<img
+								src="./src/assets/images/in-6.png"
+								alt="gallery"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</section>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.66747405825!2d2.057789123352441!3d41.39263865868773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2z0JHQsNGA0YHQtdC70L7QvdCwLCDQhtGB0L_QsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1782748959890!5m2!1suk!2sua"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="strict-origin-when-cross-origin"
+					></iframe>
+				</div>
 			</main>
 			<footer class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<div class="footer__top">
+						<a class="footer__logo" href="#"
+							><img src="./src/assets/images/logo.svg" alt=""
+						/></a>
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Service</a>
+							<a class="footer__nav-item" href="#">Portfolio</a>
+							<a class="footer__nav-item" href="#">Pricing</a>
+							<a class="footer__nav-item" href="#">Blog</a>
+							<a class="footer__nav-item" href="#">Presets</a>
+							<a class="footer__nav-item" href="#">Contact me</a>
+						</nav>
+						<div class="footer__socials">
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-pinterest"></i>
+							</a>
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-instagram"></i>
+							</a>
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-whatsapp"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">
+							© Maria Yemets 2026. All rights reserved.
+						</p>
+						<a class="footer__policy" href="#">Privacy Policy</a>
+					</div>
+				</div>
 			</footer>
 		</div>
 		<script type="module" src="./main.js"></script>

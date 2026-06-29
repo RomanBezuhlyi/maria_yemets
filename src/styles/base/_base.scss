@@ -144,3 +144,18 @@ section {
 		margin-bottom: 60px;
 	}
 }
+
+.social-icon {
+	@include flex-center;
+	width: 52px;
+	height: 52px;
+	font-size: 20px;
+	color: $color-brown;
+	border-radius: 30px;
+	background: $color-creamy;
+	transition: $transition-default;
+	@include hover {
+		color: $color-white;
+		background: $color-brown;
+	}
+}
