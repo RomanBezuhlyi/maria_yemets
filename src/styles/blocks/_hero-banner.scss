@@ -22,6 +22,11 @@
 			linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
 			url('/src/assets/images/price-hero.png');
 	}
+	&--blog {
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+			url('/src/assets/images/blog-hero.png');
+	}
 
 	&__title {
 		margin-top: 50px;
