@@ -1,0 +1,100 @@
+@use '../utils' as *;
+
+.blog {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		column-gap: 24px;
+		row-gap: 50px;
+		@include respond(tablet) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			column-gap: 20px;
+			row-gap: 40px;
+		}
+		@include respond(mobile) {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			row-gap: 28px;
+		}
+	}
+	&-item {
+		&__image {
+			display: block;
+			width: 100%;
+			aspect-ratio: 408 / 352;
+			overflow: hidden;
+			@include respond(tablet) {
+				aspect-ratio: 367 / 352;
+			}
+			@include respond(mobile) {
+				aspect-ratio: 342 / 352;
+			}
+			@include hover {
+				.blog-item__img {
+					transform: scale(1.2);
+				}
+			}
+		}
+		&__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: $transition-default;
+		}
+		&__title {
+			margin-top: 20px;
+
+			font-family: $font-main;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 1.08;
+			text-align: left;
+			color: $color-brown;
+			@include respond(tablet) {
+				font-size: 20px;
+			}
+		}
+		&__description {
+			margin-top: 10px;
+
+			font-family: $font-main;
+			font-size: 16px;
+			line-height: 1.38;
+			color: $color-black;
+		}
+		&__continue {
+			display: block;
+			text-align: right;
+			margin-top: 20px;
+
+			font-family: $font-main;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.1;
+			color: $color-brown;
+			span {
+				font-size: 14px;
+
+				margin-left: 5px;
+			}
+		}
+	}
+	&__button {
+		margin-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+
+		background-color: transparent;
+		border: 1px solid $color-brown;
+		@include hover {
+			color: $color-creamy;
+			background: $color-brown;
+		}
+		@include respond(tablet) {
+			margin-top: 60px;
+		}
+		@include respond(mobile) {
+			margin-top: 40px;
+		}
+	}
+}
