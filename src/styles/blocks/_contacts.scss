@@ -1,0 +1,162 @@
+@use '../utils' as *;
+
+.contacts {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@include respond(tablet) {
+			flex-direction: column;
+			justify-content: flex-start;
+			gap: 80px;
+		}
+		@include respond(mobile) {
+			gap: 60px;
+		}
+	}
+
+	&__content {
+		max-width: 439px;
+		width: 100%;
+		@include respond(tablet) {
+			max-width: 100%;
+		}
+	}
+
+	&__head {
+		margin-bottom: 30px;
+		@include respond(tablet) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		color: $color-black;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 40px;
+		@include respond(tablet) {
+			margin-bottom: 20px;
+		}
+		@include respond(mobile) {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@include respond(mobile) {
+			gap: 5px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: $color-black;
+		font-family: $font-accent;
+		font-size: 24px;
+		font-style: italic;
+		line-height: 30px;
+		@include respond(mobile) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__icon {
+		@include flex-center;
+		width: 60px;
+		height: 60px;
+		font-size: 24px;
+		color: $color-white;
+		border-radius: 30px;
+		background: $color-brown;
+		@include respond(mobile) {
+			width: 52px;
+			height: 52px;
+			font-size: 17px;
+		}
+	}
+
+	&__form {
+		max-width: 600px;
+		width: 100%;
+		@include respond(mobile) {
+			max-width: 100%;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		.input {
+			label {
+				color: $color-brown;
+			}
+			input {
+				color: $color-brown;
+				border-color: rgba(87, 70, 50, 0.4);
+			}
+			input::placeholder {
+				color: rgba(87, 70, 50, 0.4);
+			}
+		}
+		.textarea {
+			label {
+				color: $color-brown;
+			}
+			textarea {
+				color: $color-brown;
+				border-color: rgba(87, 70, 50, 0.4);
+			}
+			textarea::placeholder {
+				color: rgba(87, 70, 50, 0.4);
+			}
+		}
+		.tabs {
+			label {
+				color: $color-brown;
+			}
+			.book__tab {
+				color: rgba(87, 70, 50, 0.4);
+				border-color: rgba(87, 70, 50, 0.4);
+			}
+			.book__tab::before {
+				background: rgba(87, 70, 50, 0.4);
+			}
+			.book__tab:hover {
+				color: $color-brown;
+				border-color: $color-brown;
+				&::before {
+					background: $color-brown;
+				}
+			}
+			.book__tab.is-active {
+				color: $color-brown;
+				border-color: $color-brown;
+				&::before {
+					background: $color-brown;
+				}
+			}
+		}
+		.btn-submit {
+			background: $color-white;
+		}
+		.btn-submit:hover {
+			background: $color-olives;
+		}
+		.book__privacy {
+			color: rgba(87, 70, 50, 0.4);
+		}
+		.book__privacy > a {
+			color: $color-brown;
+		}
+	}
+}
