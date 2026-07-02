@@ -51,9 +51,9 @@
 						</div>
 					</nav>
 					<div class="header__socials">
-						<a class="header__social icon-mail" href="#"></a>
-						<a class="header__social icon-instagram" href="#"> </a>
-						<a class="header__social icon-whatsapp" href="#"></a>
+						<a class="header__social social-icon icon-mail" href="#"></a>
+						<a class="header__social social-icon icon-instagram" href="#"> </a>
+						<a class="header__social social-icon icon-whatsapp" href="#"></a>
 					</div>
 					<button class="header__burger">
 						<i class="icon-burger"></i>
@@ -99,9 +99,10 @@
 							</div>
 						</div>
 						<div class="header__menu-socials">
-							<a class="header__social icon-mail" href="#"></a>
-							<a class="header__social icon-instagram" href="#"> </a>
-							<a class="header__social icon-whatsapp" href="#"></a>
+							<a class="header__social social-icon icon-mail" href="#"></a>
+							<a class="header__social social-icon icon-instagram" href="#">
+							</a>
+							<a class="header__social social-icon icon-whatsapp" href="#"></a>
 						</div>
 						<div class="header__menu-langs">
 							<button class="header__menu-lang active">English</button>
@@ -111,10 +112,58 @@
 				</div>
 			</header>
 			<main>
-        
+				<section class="error">
+					<div class="error__container">
+						<div class="error__wrapper">
+							<div class="error__info">
+								<h1 class="error__title">Oops! This Page Is Out of Focus</h1>
+								<p class="error__description">
+									The page you're looking for seems to have disappeared from the
+									frame. But don't worry — there are still plenty of beautiful
+									stories to discover.
+								</p>
+								<a class="error__back-home" href="/"
+									><span class="icon-arrow"></span>Back to Home</a
+								>
+							</div>
+							<img class='error__image' src="/src/assets/images/404.png" alt="404" />
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<div class="footer__top">
+						<a class="footer__logo" href="#"
+							><img src="./src/assets/images/logo.svg" alt=""
+						/></a>
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Service</a>
+							<a class="footer__nav-item" href="#">Portfolio</a>
+							<a class="footer__nav-item" href="#">Pricing</a>
+							<a class="footer__nav-item" href="#">Blog</a>
+							<a class="footer__nav-item" href="#">Presets</a>
+							<a class="footer__nav-item" href="#">Contact me</a>
+						</nav>
+						<div class="footer__socials">
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-pinterest"></i>
+							</a>
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-instagram"></i>
+							</a>
+							<a class="footer__socials-item social-icon" href="#">
+								<i class="icon-whatsapp"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">
+							© Maria Yemets 2026. All rights reserved.
+						</p>
+						<a class="footer__policy" href="#">Privacy Policy</a>
+					</div>
+				</div>
 			</footer>
 		</div>
 
