@@ -1,16 +1,23 @@
 import '@/styles/main.scss'
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
 
-import { initSliders } from './src/js/modules/slider'
-// import { initPhoneMask } from './src/js/modules/phoneMask'
-// import { initAccordion } from '@/js/modules/accordion'
+import { Fancybox } from '@fancyapps/ui/dist/fancybox/'
+import '@fancyapps/ui/dist/fancybox/fancybox.css'
+import { initSliders } from '@/js/modules/slider'
+import { initPhoneMask } from '@/js/modules/phoneMask'
+import { initAccordion } from '@/js/modules/accordion'
 import { initMenu } from '@/js/modules/menu'
 import { initDropdown } from '@/js/modules/dropdown'
-// import { initModals } from '@/js/modules/modals'
-// import { initScrollAnimations } from '@/js/modules/animation'
-import { initHeaderScroll } from './src/js/modules/headerScroll'
-import { initHeroSlider } from './src/js/modules/heroSlider'
+import { initScrollAnimations } from '@/js/modules/animation'
+import { initHeaderScroll } from '@/js/modules/headerScroll'
+import { initHeroSlider } from '@/js/modules/heroSlider'
+import { initBookTabs } from '@/js/modules/initBookTabs'
 
 document.addEventListener('DOMContentLoaded', () => {
+	const lenis = new Lenis({
+		autoRaf: true,
+	})
 	initHeaderScroll()
 	initHeroSlider()
 	initMenu({
@@ -25,15 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		triggerSelector: '.open-dropdown',
 		activeClass: 'is-open',
 	})
-	// initScrollAnimations()
+	Fancybox.bind('[data-fancybox]')
+	initScrollAnimations()
 	initSliders()
-	// initModals()
-	// initPhoneMask('.number-mask')
-	// initAccordion({
-	// 	rootSelector: '.faq',
-	// 	itemSelector: '.faq__item',
-	// 	triggerSelector: '.faq__item-head',
-	// 	contentSelector: '.faq__item-body',
-	// 	activeClass: 'is-open',
-	// })
+	initPhoneMask('.number-mask')
+	initAccordion({
+		rootSelector: '.faq',
+		itemSelector: '.faq__item',
+		triggerSelector: '.faq__item-top',
+		contentSelector: '.faq__item-body',
+		activeClass: 'is-open',
+	})
+	initBookTabs()
 })

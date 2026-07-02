@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+.reviews {
+	&__head {
+		margin-bottom: 50px;
+		@include respond(tablet) {
+			margin-bottom: 40px;
+		}
+		@include respond(mobile) {
+			margin-bottom: 20px;
+		}
+	}
+}

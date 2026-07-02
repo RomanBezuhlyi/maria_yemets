@@ -1,0 +1,161 @@
+@use '../utils' as *;
+
+.certificates {
+	&__head {
+		margin-bottom: 50px;
+		@include respond(tablet) {
+			margin-bottom: 40px;
+		}
+		@include respond(mobile) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		gap: 50px;
+		@include respond(tablet) {
+			flex-direction: column;
+			gap: 40px;
+		}
+		@include respond(mobile) {
+			gap: 10px;
+		}
+	}
+
+	&__imgs {
+		display: flex;
+		gap: 24px;
+		flex-shrink: 0;
+		@include respond(tablet) {
+			width: 100%;
+		}
+		@include respond(mobile) {
+			gap: 16px;
+		}
+	}
+
+	&__img {
+		width: 319px;
+		height: 455px;
+		object-fit: cover;
+		@include respond(tablet) {
+			width: 50%;
+		}
+		@include respond(mobile) {
+			height: 232px;
+		}
+	}
+
+	&__info {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__info-title {
+		color: $color-brown;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 22px;
+		margin-bottom: 20px;
+		@include respond(mobile) {
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__info-list {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		list-style-type: decimal;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__info-item {
+		color: $color-brown;
+		font-size: 20px;
+		font-weight: 275;
+		line-height: 24px;
+		@include respond(tablet) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include respond(mobile) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+
+	&__info-price {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__info-price--label {
+		color: $color-brown;
+		font-family: $font-accent;
+		font-size: 24px;
+		font-style: italic;
+		line-height: 36px;
+		@include respond(mobile) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__info-price--value {
+		color: $color-brown;
+		font-family: $font-accent;
+		font-size: 40px;
+		font-style: italic;
+		line-height: 50px;
+		@include respond(mobile) {
+			font-size: 36px;
+			line-height: 38px;
+		}
+	}
+
+	&__info-price--currency {
+		color: $color-brown;
+		font-family: $font-accent;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 24px;
+		margin-bottom: auto;
+		@include respond(mobile) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&__info-btn {
+		margin-top: auto;
+		@include flex-center;
+		width: fit-content;
+		height: 52px;
+		padding: 4px 20px 0 20px;
+		color: $color-creamy;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 22px;
+		border-radius: 10px;
+		background: $color-olives;
+		transition: $transition-default;
+		@include hover {
+			background: $color-black;
+		}
+		@include respond(tablet) {
+			margin-top: 40px;
+		}
+		@include respond(mobile) {
+			margin-top: 30px;
+		}
+	}
+}

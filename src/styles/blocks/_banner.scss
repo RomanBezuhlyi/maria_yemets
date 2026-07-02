@@ -1,0 +1,45 @@
+@use '../utils' as *;
+
+.banner {
+	position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	height: 887px;
+	padding-top: 90px;
+	@include respond(tablet) {
+		height: 350px;
+		padding-top: 100px;
+	}
+	@include respond(mobile) {
+		height: 238px;
+		padding-top: 80px;
+	}
+
+	&__title {
+		color: $color-white;
+		text-align: center;
+		font-family: $font-accent;
+		font-size: 40px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 50px;
+		max-width: 780px;
+		width: 100%;
+		@include absolute-center;
+		@include respond(tablet) {
+			max-width: 754px;
+			font-size: 32px;
+			line-height: 36px;
+		}
+		@include respond(mobile) {
+			max-width: 100%;
+			font-size: 26px;
+			line-height: 30px;
+			top: auto;
+			left: 0;
+			bottom: 20px;
+			transform: translate(0);
+		}
+	}
+}

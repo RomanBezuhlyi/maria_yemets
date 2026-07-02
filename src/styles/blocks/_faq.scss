@@ -1,0 +1,123 @@
+@use '../utils' as *;
+
+.faq {
+	&__head {
+		margin-bottom: 50px;
+		@include respond(tablet) {
+			margin-bottom: 40px;
+		}
+		@include respond(mobile) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 100px;
+		@include respond(tablet) {
+			gap: 24px;
+		}
+		@include respond(mobile) {
+			flex-direction: column-reverse;
+			justify-content: flex-start;
+			gap: 20px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		@include respond(tablet) {
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@include respond(mobile) {
+			gap: 10px;
+		}
+	}
+
+	&__item.is-open {
+		.faq__item-btn {
+			transform: rotateX(-180deg);
+		}
+		.faq__item-body {
+			max-height: 200px;
+		}
+		.faq__item-answer {
+			opacity: 1;
+		}
+	}
+
+	&__item-top {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__item-question {
+		color: $color-brown;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 22px;
+		@include respond(mobile) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	&__item-btn {
+		@include flex-center;
+		transition: $transition-default;
+		i {
+			font-size: 9px;
+		}
+	}
+
+	&__item-body {
+		overflow: hidden;
+		max-height: 0;
+		transition: $transition-default;
+	}
+
+	&__item-answer {
+		color: $color-brown;
+		font-size: 20px;
+		font-weight: 275;
+		line-height: 24px;
+		opacity: 0;
+		transition: $transition-default;
+		@include respond(tablet) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+
+	&__img {
+		margin-right: -84px;
+		width: 554px;
+		min-height: 691px;
+		align-self: stretch;
+		object-fit: cover;
+		@include respond(tablet) {
+			margin-right: -15px;
+			width: 50%;
+		}
+		@include respond(mobile) {
+			width: 100vw;
+			max-width: 100vw;
+			margin-left: calc(50% - 50vw);
+			margin-right: calc(50% - 50vw);
+			height: 456px;
+			object-fit: cover;
+		}
+	}
+}

@@ -183,19 +183,6 @@
 			display: none;
 		}
 	}
-	&__social {
-		@include flex-center;
-		width: 52px;
-		height: 52px;
-		color: $color-brown;
-		border-radius: 30px;
-		background: $color-creamy;
-		transition: $transition-default;
-		@include hover {
-			color: $color-white;
-			background: $color-brown;
-		}
-	}
 
 	&__burger {
 		display: none;

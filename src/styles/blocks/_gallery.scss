@@ -1,0 +1,120 @@
+@use '../utils' as *;
+
+.gallery {
+	&__filter {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-bottom: 50px;
+		@include respond(tablet) {
+			margin-bottom: 40px;
+		}
+		@include respond(mobile) {
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__filter-item {
+		position: relative;
+		@include flex-center;
+		height: 42px;
+		padding: 10px 10px 10px 30px;
+		color: rgba(87, 70, 50, 0.4);
+		font-size: 18px;
+		line-height: 22px;
+		border-radius: 10px;
+		border: 1px solid rgba(87, 70, 50, 0.4);
+		transition: $transition-default;
+		@include respond(mobile) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			transform: translateY(-50%);
+			width: 15px;
+			height: 15px;
+			border-radius: 30px;
+			background: rgba(87, 70, 50, 0.4);
+			transition: $transition-default;
+		}
+		@include hover {
+			color: rgba(87, 70, 50, 1);
+			border-color: rgba(87, 70, 50, 1);
+			&::before {
+				background: rgba(87, 70, 50, 1);
+			}
+		}
+		&.active {
+			color: $color-background;
+			background: rgba(87, 70, 50, 1);
+			border-color: rgba(87, 70, 50, 1);
+			&::before {
+				background: $color-background;
+			}
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 24px;
+		@include respond(tablet) {
+			gap: 14px;
+		}
+		@include respond(mobile) {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			gap: 16px;
+		}
+	}
+
+	&__list-item {
+		height: 515px;
+		overflow: hidden;
+		@include respond(tablet) {
+			height: 311px;
+		}
+		@include respond(mobile) {
+			height: 515px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: $transition-default;
+		}
+		@include hover {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	&__list-item:nth-last-child(-n + 3) {
+		height: 285px;
+		@include respond(mobile) {
+			height: 174px;
+		}
+	}
+
+	&__list-item:nth-child(3n + 2) {
+		position: relative;
+		top: 50px;
+		@include respond(mobile) {
+			position: static;
+			top: 0;
+		}
+	}
+
+	&__list-item:nth-last-child(2) {
+		height: 235px;
+		@include respond(mobile) {
+			height: 174px;
+		}
+	}
+}
