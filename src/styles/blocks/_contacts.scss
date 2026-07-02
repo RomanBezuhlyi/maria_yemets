@@ -131,11 +131,13 @@
 			.book__tab::before {
 				background: rgba(87, 70, 50, 0.4);
 			}
-			.book__tab:hover {
-				color: $color-brown;
-				border-color: $color-brown;
-				&::before {
-					background: $color-brown;
+			.book__tab {
+				@include hover {
+					color: $color-brown;
+					border-color: $color-brown;
+					&::before {
+						background: $color-brown;
+					}
 				}
 			}
 			.book__tab.is-active {
@@ -149,8 +151,10 @@
 		.btn-submit {
 			background: $color-white;
 		}
-		.btn-submit:hover {
-			background: $color-olives;
+		.btn-submit {
+			@include hover {
+				background: $color-olives;
+			}
 		}
 		.book__privacy {
 			color: rgba(87, 70, 50, 0.4);

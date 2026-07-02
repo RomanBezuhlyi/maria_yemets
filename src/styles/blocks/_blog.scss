@@ -43,7 +43,6 @@
 		}
 		&__title {
 			margin-top: 20px;
-
 			font-family: $font-main;
 			font-size: 24px;
 			font-weight: 500;
@@ -56,26 +55,31 @@
 		}
 		&__description {
 			margin-top: 10px;
-
 			font-family: $font-main;
 			font-size: 16px;
 			line-height: 1.38;
 			color: $color-black;
 		}
 		&__continue {
-			display: block;
-			text-align: right;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 10px;
 			margin-top: 20px;
-
 			font-family: $font-main;
 			font-size: 20px;
 			font-weight: 500;
 			line-height: 1.1;
 			color: $color-brown;
 			span {
+				display: block;
 				font-size: 14px;
-
-				margin-left: 5px;
+				transition: $transition-default;
+			}
+			@include hover {
+				span {
+					transform: translate(10px);
+				}
 			}
 		}
 	}
@@ -83,7 +87,6 @@
 		margin-top: 100px;
 		margin-left: auto;
 		margin-right: auto;
-
 		background-color: transparent;
 		border: 1px solid $color-brown;
 		@include hover {

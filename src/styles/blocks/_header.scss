@@ -313,3 +313,19 @@
 		color: $color-brown;
 	}
 }
+
+.header.error-page {
+	background: $color-background;
+	box-shadow:
+		0 4px 20px rgba(0, 0, 0, 0.06),
+		0 1px 0 rgba(0, 0, 0, 0.04);
+	.header__nav-item {
+		color: $color-black;
+		@include respond(tablet) {
+			color: $color-white;
+		}
+	}
+	.header__burger {
+		color: $color-brown;
+	}
+}
