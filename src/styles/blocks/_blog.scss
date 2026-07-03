@@ -61,26 +61,7 @@
 			color: $color-black;
 		}
 		&__continue {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			gap: 10px;
 			margin-top: 20px;
-			font-family: $font-main;
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 1.1;
-			color: $color-brown;
-			span {
-				display: block;
-				font-size: 14px;
-				transition: $transition-default;
-			}
-			@include hover {
-				span {
-					transform: translate(10px);
-				}
-			}
 		}
 	}
 	&__button {
