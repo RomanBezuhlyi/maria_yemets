@@ -3,8 +3,8 @@ import { Navigation, Scrollbar, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 
 export function initSliders() {
-	if (document.querySelector('.services__list')) {
-		new Swiper('.swiper', {
+	if (document.querySelector('.services-swiper')) {
+		new Swiper('.services-swiper', {
 			modules: [Navigation, Scrollbar, Autoplay],
 			observer: true,
 			observeParents: true,
