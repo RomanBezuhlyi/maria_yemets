@@ -105,6 +105,28 @@ body.lock {
 	}
 }
 
+.link-arrow {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+	font-family: $font-main;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.1;
+	color: $color-brown;
+	span {
+		display: block;
+		font-size: 14px;
+		transition: $transition-default;
+	}
+	@include hover {
+		span {
+			transform: translate(10px);
+		}
+	}
+}
+
 /* Заголовок */
 [class$='__head'] {
 	display: flex;

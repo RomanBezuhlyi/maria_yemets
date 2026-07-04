@@ -1,0 +1,76 @@
+@use '../utils' as *;
+
+.service-details {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+    gap: 24px;
+    @include respond(mobile) {
+      flex-direction: column;
+      gap: 20px;
+    }
+	}
+	&__block {
+		flex: 1;
+	}
+	&__subtitle {
+		margin-bottom: 10px;
+
+		font-family: $font-accent;
+		font-size: 32px;
+		font-weight: normal;
+		font-style: italic;
+		line-height: 1.25;
+		color: $color-brown;
+		@include respond(tablet) {
+			font-size: 24px;
+		}
+    @include respond(mobile) {
+      font-size: 20px;
+    }
+	}
+	&__text,
+	&__item {
+		font-family: $font-main;
+		font-size: 20px;
+		font-weight: 200;
+		line-height: 1.2;
+		color: $color-black;
+		@include respond(tablet) {
+			font-size: 18px;
+		}
+    @include respond(mobile) {
+      font-size: 16px;
+    }
+	}
+	&__item {
+		position: relative;
+		padding-left: 12px;
+
+		&-list {
+			margin-top: 15px;
+		}
+		&-link {
+			text-decoration: underline;
+		}
+
+		@include respond(tablet) {
+			font-size: 18px;
+		}
+		@include respond(mobile) {
+			font-size: 16px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0.6em;
+
+			width: 3px;
+			height: 3px;
+			border-radius: 50%;
+			background-color: $color-black;
+		}
+	}
+}
