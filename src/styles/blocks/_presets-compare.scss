@@ -1,0 +1,86 @@
+@use '../utils' as *;
+
+.presets-compare {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: minmax(0, 515px) minmax(0, 659px);
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+		@include respond(tablet) {
+			grid-template-columns: minmax(0, 1fr);
+			gap: 40px;
+		}
+		@include respond(mobile) {
+			gap: 20px;
+		}
+	}
+
+	&__content {
+		max-width: 515px;
+		@include respond(tablet) {
+			max-width: none;
+		}
+	}
+
+	&__subtitle {
+		margin-top: 40px;
+
+		font-family: $font-accent;
+		font-size: 24px;
+		font-weight: normal;
+		font-style: italic;
+		line-height: 1.5;
+		color: $color-black;
+		@include respond(mobile) {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		margin-top: 50px;
+
+		font-family: $font-main;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1.22;
+		color: $color-black;
+		@include respond(mobile) {
+			margin-top: 40px;
+			font-size: 16px;
+		}
+	}
+
+	&__item::before {
+		content: '- ';
+	}
+
+	&__steps {
+		margin: 50px 0 0 0;
+		padding: 0;
+		list-style: none;
+
+		font-family: $font-main;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1.22;
+		color: $color-black;
+
+		@include respond(mobile) {
+			margin: 20px 0 0;
+			font-size: 16px;
+		}
+	}
+
+	&__media {
+		width: 100%;
+		@include respond(tablet) {
+			padding: 0 47px;
+		}
+		@include respond(mobile) {
+			padding: 0;
+		}
+	}
+}
