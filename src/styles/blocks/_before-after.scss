@@ -1,0 +1,135 @@
+@use '../utils' as *;
+
+.before-after {
+	--position: 50%;
+
+	position: relative;
+
+	width: 100%;
+
+	overflow: hidden;
+
+	background-color: $color-creamy;
+	&__presets-compare {
+		aspect-ratio: 659 / 492;
+    @include respond(mobile) {
+      aspect-ratio: 343 / 392;
+    }
+	}
+	&__transformation {
+    aspect-ratio: 624 / 666;
+     @include respond(tablet) {
+      aspect-ratio: 365 / 403;
+    }
+    @include respond(mobile) {
+      aspect-ratio: 343 / 392;
+    }
+	}
+
+	&__image {
+		position: absolute;
+		inset: 0;
+
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+		display: block;
+
+		pointer-events: none;
+		user-select: none;
+	}
+
+	&__image--before {
+		z-index: 1;
+	}
+
+	&__image--after {
+		z-index: 2;
+
+		clip-path: inset(0 0 0 var(--position));
+	}
+
+	&__line {
+		position: absolute;
+		top: 0;
+		left: var(--position);
+		z-index: 3;
+
+		width: 4px;
+		height: 100%;
+
+		background-color: #fff;
+		transform: translateX(-50%);
+		pointer-events: none;
+
+		@include respond(mobile) {
+			width: 3px;
+		}
+	}
+
+	&__handle {
+		position: absolute;
+		top: 50%;
+		left: var(--position);
+		z-index: 4;
+
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: $color-creamy;
+		color: $color-black;
+
+		font-size: 24px;
+		line-height: 1;
+
+		transform: translate(-50%, -50%);
+		cursor: ew-resize;
+		touch-action: none;
+		user-select: none;
+
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+
+		@include respond(mobile) {
+			width: 38px;
+			height: 38px;
+			font-size: 20px;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		bottom: 22px;
+		z-index: 4;
+
+		color: #fff;
+
+		font-size: 14px;
+		line-height: 1;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+
+		pointer-events: none;
+
+		@include respond(mobile) {
+			bottom: 16px;
+			font-size: 12px;
+		}
+	}
+
+	&__label--before {
+		left: 25%;
+		transform: translateX(-50%);
+	}
+
+	&__label--after {
+		right: 25%;
+		transform: translateX(50%);
+	}
+}

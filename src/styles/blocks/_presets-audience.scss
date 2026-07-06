@@ -1,0 +1,69 @@
+@use '../utils' as *;
+
+.presets-audience {
+	&__wrapper {
+		margin-top: 50px;
+		height: 340px;
+
+		display: grid;
+		grid-template-columns: 312px minmax(0, 1fr) minmax(0, 1fr);
+		grid-template-areas: 'list image1 image2';
+		gap: 24px;
+		align-items: stretch;
+		@include respond(tablet) {
+			grid-template-columns: 235px minmax(0, 1fr) minmax(0, 1fr);
+			margin-top: 40px;
+		}
+		@include respond(mobile) {
+			height: auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas:
+				'list list'
+				'image1 image2';
+			gap: 10px;
+			margin-top: 20px;
+		}
+	}
+	&__list {
+		grid-area: list;
+
+		max-width: 312px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@include respond(tablet) {
+			gap: 10px;
+		}
+		@include respond(mobile) {
+			max-width: 100%;
+		}
+	}
+	&__item {
+		font-family: $font-main;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1.22;
+		color: $color-black;
+		&::before {
+			content: '- ';
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		min-width: 0;
+		min-height: 0;
+
+		object-fit: cover;
+		display: block;
+
+		&:nth-of-type(1) {
+			grid-area: image1;
+		}
+
+		&:nth-of-type(2) {
+			grid-area: image2;
+		}
+	}
+}

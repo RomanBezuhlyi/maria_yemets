@@ -40,6 +40,40 @@
 			max-width: 263px;
 		}
 	}
+	&__btn {
+		margin-top: 100px;
+
+		color: $color-creamy;
+		background-color: $color-olives;
+		@include hover {
+			color: $color-brown;
+			background: $color-creamy;
+		}
+		@include respond(tablet) {
+      display: none;
+    }
+	}
+	&__description {
+		color: $color-white;
+		text-align: right;
+		font-size: 20px;
+		font-weight: 275;
+		line-height: 24px;
+		max-width: 360px;
+		width: 100%;
+		margin-left: auto;
+		margin-top: 158px;
+		@include respond(tablet) {
+			font-size: 24px;
+			line-height: 26px;
+			margin-top: 460px;
+		}
+		@include respond(mobile) {
+			font-size: 20px;
+			line-height: 24px;
+			margin-top: 183px;
+		}
+	}
 }
 
 .breadcrumbs {
