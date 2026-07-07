@@ -113,421 +113,459 @@
 				</div>
 			</header>
 			<main>
-				<section
-					class="hero-banner"
-					style="
-						background-image:
-							linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-							url('/src/assets/images/presets-hero.png');
-					"
-				>
-					<div class="hero-banner__container">
-						<div class="hero-banner__content">
-							<nav class="breadcrumbs" aria-label="Breadcrumb">
-								<ol class="breadcrumbs__list">
-									<li class="breadcrumbs__item">
-										<a class="breadcrumbs__link" href="/">Home</a>
-									</li>
-									<li class="breadcrumbs__item" aria-current="page">Presets</li>
-								</ol>
-							</nav>
-							<h1 class="hero-banner__title">CINEMATIC Lightroom PRESETS</h1>
-							<button class="hero-banner__btn btn-primary">Buy Presets</button>
+				<section class="hero">
+					<div class="hero__dynamic-imgs">
+						<img
+							class="hero__img active"
+							src="/src/assets/images/hero-1.png"
+							alt="hero 1"
+							loading="lazy"
+						/>
+						<img
+							class="hero__img"
+							src="/src/assets/images/hero-2.png"
+							alt="hero 2"
+							loading="lazy"
+						/>
+					</div>
+					<div class="hero__container">
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Photographer in Barcelona Maria Yemets
+							</h1>
+							<div class="hero__dynamic-text">
+								<p class="hero__text active">Capturing Families</p>
+								<p class="hero__text">Capturing Engagement</p>
+							</div>
+							<div class="hero__btns">
+								<a class="hero__btn btn-primary" href="#contact-me"
+									>Contact me</a
+								>
+								<a class="hero__btn btn-outline" href="#">View Portfolio</a>
+							</div>
 						</div>
-						<p class="hero-banner__description">
-							Designed for photographers, creators and anyone who wants
-							beautiful, consistent colors in every image.
+						<p class="hero__description">
+							Professional photographer in Barcelona: capturing your most
+							cherished moments in stunning locations
 						</p>
 					</div>
 				</section>
-				<section class="presets-compare">
-					<div class="presets-compare__container">
-						<div class="presets-compare__wrapper">
-							<div class="presets-compare__content" data-animate="fade-right">
-								<div class="presets-compare__head">
-									<p class="presets-compare__label">BEFORE/AFTER</p>
-									<h2 class="presets-compare__title">Why These Presets?</h2>
+				<section class="intro">
+					<div class="intro__container">
+						<img
+							class="intro__img-left"
+							data-animate="fade-right"
+							src="/src/assets/images/intro-left.png"
+							alt="image"
+							loading="lazy"
+						/>
+						<div class="intro__content" data-animate="fade-up">
+							<h2 class="intro__title">
+								Barcelona Photography for Every Chapter of Your Story
+							</h2>
+							<p class="intro__text">
+								Whether you are planning a wedding, family session, love story,
+								or personal portrait, I create photographs that reflect real
+								emotions and genuine connections. Based in Barcelona, I focus on
+								delivering a relaxed experience and images that feel natural,
+								cinematic, and lasting.
+							</p>
+						</div>
+						<img
+							class="intro__img-right"
+							src="/src/assets/images/intro-right.png"
+							data-animate="fade-left"
+							alt="image"
+							loading="lazy"
+						/>
+					</div>
+				</section>
+				<section class="services">
+					<div class="services__container">
+						<div class="services__top">
+							<div class="services__head">
+								<p data-animate="fade-right">My Services</p>
+								<h2 data-animate="fade-right">Moments Turned Into Art</h2>
+							</div>
+							<div class="services__nav swiper-nav" data-animate="fade-left">
+								<button class="services__nav-prev swiper-nav-prev">
+									<i class="icon-arrow"></i>
+								</button>
+								<button class="services__nav-next swiper-nav-next">
+									<i class="icon-arrow"></i>
+								</button>
+							</div>
+						</div>
+						<div class="swiper services-swiper" data-animate="fade-up">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide services__card">
+									<a href="#" class="services__link">
+										<img
+											class="services__link-img"
+											src="./src/assets/images/s-1.png"
+											alt=""
+										/>
+										<h3 class="services__link-title">Portrait</h3>
+										<p class="services__link-text">Photography Barcelona</p>
+									</a>
 								</div>
-								<p class="presets-compare__subtitle">
-									These presets were created based on my photography style and
-									real client sessions.
-								</p>
-
-								<div class="presets-compare__text">
-									<p>They help you:</p>
-									<ul class="presets-compare__list">
-										<li class="presets-compare__item">save time on editing;</li>
-										<li class="presets-compare__item">
-											create a consistent visual style;
+								<div class="swiper-slide services__card">
+									<a href="#" class="services__link">
+										<img
+											class="services__link-img"
+											src="./src/assets/images/s-2.png"
+											alt=""
+										/>
+										<h3 class="services__link-title">Portrait</h3>
+										<p class="services__link-text">Photography Barcelona</p>
+									</a>
+								</div>
+								<div class="swiper-slide services__card">
+									<a href="#" class="services__link">
+										<img
+											class="services__link-img"
+											src="./src/assets/images/s-3.png"
+											alt=""
+										/>
+										<h3 class="services__link-title">Portrait</h3>
+										<p class="services__link-text">Photography Barcelona</p>
+									</a>
+								</div>
+								<div class="swiper-slide services__card">
+									<a href="#" class="services__link">
+										<img
+											class="services__link-img"
+											src="./src/assets/images/s-4.png"
+											alt=""
+										/>
+										<h3 class="services__link-title">Portrait</h3>
+										<p class="services__link-text">Photography Barcelona</p>
+									</a>
+								</div>
+								<div class="swiper-slide services__card">
+									<a href="#" class="services__link">
+										<img
+											class="services__link-img"
+											src="./src/assets/images/s-5.png"
+											alt=""
+										/>
+										<h3 class="services__link-title">Portrait</h3>
+										<p class="services__link-text">Photography Barcelona</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="services__scrollbar swiper-scrollbar"></div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="about__container">
+						<div class="about__left">
+							<div class="about__head">
+								<p data-animate="fade-right">About me</p>
+								<h2 data-animate="fade-right">Behind the Lens</h2>
+							</div>
+							<div class="about__content">
+								<div class="about__content-top">
+									<img
+										class="about__content-img"
+										src="./src/assets/images/about-1.png"
+										data-animate="fade-right"
+										alt="about"
+										loading="lazy"
+									/>
+									<p class="about__content-text" data-animate="fade-right">
+										Photography, for me, is about people and the emotions they
+										share. A glance. A smile. A touch. A laugh. The moments that
+										often pass unnoticed, yet become the memories we treasure
+										most. My style is natural, cinematic, and emotion-driven. I
+										gently guide when needed, but I always leave room for real
+										moments to unfold. Based in Barcelona, I photograph
+										families, motherhood, newborns, couples, intimate weddings,
+										baptisms, and personal branding sessions. My goal is simple
+										- to create photographs that feel honest, timeless, and
+										truly yours.
+									</p>
+								</div>
+								<div class="about__content-bottom">
+									<p class="about__content-label" data-animate="fade-right">
+										You can contact me through any of the following methods.
+									</p>
+									<ul class="about__content-socials">
+										<li class="about__content-social" data-animate="fade-right">
+											<a
+												class="about__content-social--link icon-mail"
+												href="#"
+											></a>
 										</li>
-										<li class="presets-compare__item">
-											enhance the mood and atmosphere of your photos;
+										<li class="about__content-social" data-animate="fade-right">
+											<a
+												class="about__content-social--link icon-instagram"
+												href="#"
+											></a>
 										</li>
-										<li class="presets-compare__item">
-											achieve professional-looking results with ease.
+										<li class="about__content-social" data-animate="fade-right">
+											<a
+												class="about__content-social--link icon-whatsapp"
+												href="#"
+											></a>
 										</li>
 									</ul>
 								</div>
-
-								<ul class="presets-compare__steps">
-									<li class="presets-compare__step">
-										Choose your preset collection.
-									</li>
-									<li class="presets-compare__step">Complete your purchase.</li>
-									<li class="presets-compare__step">
-										Receive the files instantly.
-									</li>
-									<li class="presets-compare__step">
-										Install the presets using the included guide.
-									</li>
-									<li class="presets-compare__step">
-										Transform your photos in just a few clicks.
-									</li>
-								</ul>
-							</div>
-
-							<div class="presets-compare__media" data-animate="fade-left">
-								<div
-									class="before-after before-after__presets-compare"
-									style="--position: 50%"
-								>
-									<img
-										class="before-after__image before-after__image--before"
-										src="/src/assets/images/prtfl-1.png"
-										alt="Photo before preset"
-									/>
-
-									<img
-										class="before-after__image before-after__image--after"
-										src="/src/assets/images/prtfl-2.png"
-										alt="Photo after preset"
-									/>
-
-									<span class="before-after__label before-after__label--before">
-										Before
-									</span>
-
-									<span class="before-after__label before-after__label--after">
-										After
-									</span>
-
-									<div class="before-after__line"></div>
-
-									<button class="before-after__handle" type="button">
-										<svg
-											width="32"
-											height="24"
-											viewBox="0 0 32 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M5 12H27"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-											/>
-
-											<path
-												d="M10 7L5 12L10 17"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-
-											<path
-												d="M22 7L27 12L22 17"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</button>
-								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section class="presets-audience">
-					<div class="presets-audience__container">
-						<div class="presets-audience__head" data-animate="fade-right">
-							<p class="presets-audience__label">Perfect for</p>
-							<h2 class="presetc-audience__title">
-								Ideal for Any Photography Journey
-							</h2>
+						<div class="about__right">
+							<img
+								class="about__right-img"
+								src="./src/assets/images/about-2.png"
+								data-animate="fade-left"
+								alt="about"
+								loading="lazy"
+							/>
 						</div>
-						<div class="presets-audience__wrapper" data-animate="fade-left">
-							<ul class="presets-audience__list">
-								<li class="presets-audience__item">
-									Professional Photographers
+						<div class="about__bottom">
+							<p class="about__content-label" data-animate="fade-right">
+								You can contact me through any of the following methods.
+							</p>
+							<ul class="about__content-socials">
+								<li class="about__content-social" data-animate="fade-right">
+									<a class="about__content-social--link icon-mail" href="#"></a>
 								</li>
-								<li class="presets-audience__item">Content Creators</li>
-								<li class="presets-audience__item">Influencers & Bloggers</li>
-								<li class="presets-audience__item">Business Owners</li>
-								<li class="presets-audience__item">
-									Anyone looking for beautiful, effortless photo editing without
-									the need for advanced skills or complex adjustments.
+								<li class="about__content-social" data-animate="fade-right">
+									<a
+										class="about__content-social--link icon-instagram"
+										href="#"
+									></a>
+								</li>
+								<li class="about__content-social" data-animate="fade-right">
+									<a
+										class="about__content-social--link icon-whatsapp"
+										href="#"
+									></a>
 								</li>
 							</ul>
-							<img
-								class="presets-audience__img"
-								src="/src/assets/images/prtfl-5.png"
-								alt="photo"
-							/>
-							<img
-								class="presets-audience__img"
-								src="/src/assets/images/prtfl-6.png"
-								alt="photo"
-							/>
 						</div>
 					</div>
 				</section>
-				<section class="transformation">
-					<div class="transformation__container">
-						<div class="transformation__head" data-animate="fade-right">
-							<p class="transformation__label">Before/After</p>
-							<h2 class="transformation__title">
-								Before & After Transformations
+				<section class="certificates">
+					<div class="certificates__container">
+						<div class="certificates__head">
+							<p data-animate="fade-right">Certificates</p>
+							<h2 data-animate="fade-right">
+								Give the gift of memories with a photography session voucher
 							</h2>
 						</div>
-						<div class="transformation__content" data-animate="fade-left">
-							<div
-								class="before-after before-after__transformation"
-								style="--position: 50%"
-							>
+						<div class="certificates__content">
+							<div class="certificates__imgs">
 								<img
-									class="before-after__image before-after__image--before"
-									src="/src/assets/images/prtfl-3.png"
-									alt="Photo before preset"
+									src="./src/assets/images/c-1.png"
+									alt="image"
+									data-animate="fade-right"
+									class="certificates__img"
+									loading="lazy"
 								/>
-
 								<img
-									class="before-after__image before-after__image--after"
-									src="/src/assets/images/prtfl-4.png"
-									alt="Photo after preset"
+									src="./src/assets/images/c-2.png"
+									alt="image"
+									data-animate="fade-right"
+									class="certificates__img"
+									loading="lazy"
 								/>
-
-								<span class="before-after__label before-after__label--before">
-									Before
-								</span>
-
-								<span class="before-after__label before-after__label--after">
-									After
-								</span>
-
-								<div class="before-after__line"></div>
-
-								<button class="before-after__handle" type="button">
-									<svg
-										width="32"
-										height="24"
-										viewBox="0 0 32 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M5 12H27"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-										/>
-
-										<path
-											d="M10 7L5 12L10 17"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-
-										<path
-											d="M22 7L27 12L22 17"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-									</svg>
-								</button>
 							</div>
-							<div
-								class="before-after before-after__transformation"
-								style="--position: 50%"
-							>
-								<img
-									class="before-after__image before-after__image--before"
-									src="/src/assets/images/prtfl-5.png"
-									alt="Photo before preset"
-								/>
-
-								<img
-									class="before-after__image before-after__image--after"
-									src="/src/assets/images/prtfl-6.png"
-									alt="Photo after preset"
-								/>
-
-								<span class="before-after__label before-after__label--before">
-									Before
-								</span>
-
-								<span class="before-after__label before-after__label--after">
-									After
-								</span>
-
-								<div class="before-after__line"></div>
-
-								<button class="before-after__handle" type="button">
-									<svg
-										width="32"
-										height="24"
-										viewBox="0 0 32 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M5 12H27"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-										/>
-
-										<path
-											d="M10 7L5 12L10 17"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-
-										<path
-											d="M22 7L27 12L22 17"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-									</svg>
-								</button>
+							<div class="certificates__info">
+								<p class="certificates__info-title" data-animate="fade-left">
+									What’s included in the Gift Certificate for a Photoshoot in
+									Barcelona:
+								</p>
+								<ol class="certificates__info-list">
+									<li class="certificates__info-item" data-animate="fade-left">
+										A certificate in a cozy envelope
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
+										A 1-hour photo shoot
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
+										70 edited photographs in artistic colours
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
+										1 Video Reels
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
+										A private online gallery
+									</li>
+									<li class="certificates__info-item" data-animate="fade-left">
+										Delivery of a certificate by Correos within the Barcelona
+										area
+									</li>
+								</ol>
+								<div class="certificates__info-price" data-animate="fade-left">
+									<p class="certificates__info-price--label">Price:</p>
+									<p class="certificates__info-price--value">399</p>
+									<p class="certificates__info-price--currency">EUR</p>
+								</div>
+								<a
+									class="certificates__info-btn"
+									href="#"
+									data-animate="fade-left"
+									>Buy a Gift Certificate</a
+								>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="presets-install">
-					<div class="presets-install__container">
-						<h2 class="presets-install__title" data-animate="fade-right">
-							How It Works
-						</h2>
-						<div class="presets-install__content" data-animate="fade-up">
-							<div class="presets-install__step">
-								<img
-									class="presets-install__img"
-									src="/src/assets/images/install-1.svg"
-									alt="install step"
-								/>
-								<h3 class="presets-install__subtitle">
-									Complete your purchase
-								</h3>
-								<p class="presets-install__description">
-									Securely place your order in just a few clicks using the
-									available payment options.
-								</p>
+				<section class="portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__top">
+							<div class="portfolio__head">
+								<p data-animate="fade-right">My portfolio</p>
+								<h2 data-animate="fade-right">
+									A Collection of Meaningful Moments
+								</h2>
 							</div>
-							<div class="presets-install__step">
-								<img
-									class="presets-install__img"
-									src="/src/assets/images/install-2.svg"
-									alt="install step"
-								/>
-								<h3 class="presets-install__subtitle">
-									Receive your files via email
-								</h3>
-								<p class="presets-install__description">
-									After payment, you will instantly receive a download link to
-									your email.
-								</p>
+							<a
+								class="portfolio__link-all desktop"
+								href="#"
+								data-animate="fade-left"
+								>View Portfolio <i class="icon-arrow"></i
+							></a>
+						</div>
+						<div class="portfolio__gallery" data-animate="fade-up">
+							<div class="portfolio__gallery-col">
+								<a
+									class="portfolio__gallery-link medium"
+									href="./src/assets/images/p-1.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-1.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
+								<a
+									class="portfolio__gallery-link small"
+									href="./src/assets/images/p-2.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-2.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
 							</div>
-							<div class="presets-install__step">
-								<img
-									class="presets-install__img"
-									src="/src/assets/images/install-3.svg"
-									alt="install step"
-								/>
-								<h3 class="presets-install__subtitle">Install the presets</h3>
-								<p class="presets-install__description">
-									Follow the simple step-by-step instructions included in the
-									package to install your presets in Lightroom.
-								</p>
+							<div class="portfolio__gallery-col">
+								<a
+									class="portfolio__gallery-link large"
+									href="./src/assets/images/p-3.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-3.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
+							</div>
+							<div class="portfolio__gallery-col">
+								<a
+									class="portfolio__gallery-link medium"
+									href="./src/assets/images/p-4.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-4.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
+								<a
+									class="portfolio__gallery-link small"
+									href="./src/assets/images/p-5.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-5.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
+							</div>
+							<div class="portfolio__gallery-col">
+								<a
+									class="portfolio__gallery-link large"
+									href="./src/assets/images/p-6.png"
+									data-fancybox="gallery"
+								>
+									<img
+										src="./src/assets/images/p-6.png"
+										alt="gallery"
+										loading="lazy"
+									/>
+								</a>
 							</div>
 						</div>
+						<a class="portfolio__link-all tablet" href="#"
+							>View Portfolio <i class="icon-arrow"></i
+						></a>
 					</div>
 				</section>
-				<section class="presets-offer">
-					<div class="presets-offer__container">
-						<div class="presets-offer__head">
-							<p class="presets-offer__label" data-animate="fade-right">
-								Presets
-							</p>
-							<h2 class="presets-offer__title" data-animate="fade-right">
-								Get Instant Access Today
+				<section class="steps">
+					<div class="steps__container">
+						<div class="steps__head">
+							<p data-animate="fade-right">How It Works</p>
+							<h2 data-animate="fade-right">
+								From the first message to your final gallery
 							</h2>
 						</div>
-						<div class="presets-offer__wrapper">
-							<div class="presets-offer__images" data-animate="fade-right">
-								<img
-									class="presets-offer__img"
-									src="/src/assets/images/prtfl-1.png"
-									alt="preset preview"
-								/>
-								<img
-									class="presets-offer__img"
-									src="/src/assets/images/prtfl-2.png"
-									alt="preset preview"
-								/>
-								<img
-									class="presets-offer__img"
-									src="/src/assets/images/prtfl-3.png"
-									alt="preset preview"
-								/>
-								<img
-									class="presets-offer__img"
-									src="/src/assets/images/prtfl-4.png"
-									alt="preset preview"
-								/>
-							</div>
-							<div class="presets-offer__content" data-animate="fade-left">
-								<h3 class="presets-offer__subtitle">
-									What's Included in the Preset Collection
-								</h3>
-								<ul class="presets-offer__list">
-									<li class="presets-offer__item">
-										15 Premium Lightroom Presets
-									</li>
-									<li class="presets-offer__item">
-										Compatible with Lightroom Mobile & Desktop
-									</li>
-									<li class="presets-offer__item">
-										Cinematic Colors & Natural Skin Tones
-									</li>
-									<li class="presets-offer__item">
-										One-Click Editing Workflow
-									</li>
-									<li class="presets-offer__item">
-										Easy Installation Guide Included
-									</li>
-									<li class="presets-offer__item">Free Future Updates</li>
-									<li class="presets-offer__item">
-										Instant Access After Purchase
-									</li>
-								</ul>
-								<p class="presets-offer__price">
-									Price:
-									<span class="presets-offer__price-count">99</span>
-									<span class="presets-offer__price-currency">EUR</span>
+						<img
+							class="steps__illustration"
+							src="./src/assets/images/steps.svg"
+							alt="steps"
+							data-animate="fade-left"
+						/>
+						<ul class="steps__list">
+							<li class="steps__item" data-animate="fade-right">
+								<div class="steps__item-img">
+									<img src="./src/assets/images/step-1.svg" alt="image" />
+								</div>
+								<p class="steps__item-title">1. Consultation</p>
+								<p class="steps__item-text">
+									We connect and discuss your vision, preferred style, locations
+									in Barcelona, and the overall mood of your session.
 								</p>
-							</div>
-						</div>
+							</li>
+							<li class="steps__item" data-animate="fade-right">
+								<div class="steps__item-img">
+									<img src="./src/assets/images/step-2.svg" alt="image" />
+								</div>
+								<p class="steps__item-title">2. Shooting</p>
+								<p class="steps__item-text">
+									I guide you through the session, helping you feel confident
+									and capture natural, authentic moments.
+								</p>
+							</li>
+							<li class="steps__item" data-animate="fade-right">
+								<div class="steps__item-img">
+									<img src="./src/assets/images/step-3.svg" alt="image" />
+								</div>
+								<p class="steps__item-title">3. Editing</p>
+								<p class="steps__item-text">
+									I carefully select and edit the strongest photographs while
+									preserving my signature cinematic style.
+								</p>
+							</li>
+							<li class="steps__item" data-animate="fade-right">
+								<div class="steps__item-img">
+									<img src="./src/assets/images/step-4.svg" alt="image" />
+								</div>
+								<p class="steps__item-title">4. Delivery</p>
+								<p class="steps__item-text">
+									You receive a curated online gallery filled with photographs
+									that tell your unique story.
+								</p>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="book">
